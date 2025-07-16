@@ -1,0 +1,6 @@
+tensorflow
+numpy
+mitdeeplearning
+comet_ml
+scipy
+tqdm

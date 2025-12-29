@@ -10,7 +10,7 @@ Original file is located at
 !pip install comet_ml > /dev/null 2>&1
 import comet_ml
 # TODO: ENTER YOUR API KEY HERE!! instructions above
-COMET_API_KEY = "fHkRHFwNb0CCzG1tztK9GPYsw"
+COMET_API_KEY = os.getenv("COMET_API_KEY")
 
 # Import Tensorflow 2.0
 import tensorflow as tf

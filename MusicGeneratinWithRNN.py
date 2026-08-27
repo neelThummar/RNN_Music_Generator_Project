@@ -116,7 +116,7 @@ if not mdl.lab1.test_batch_func_types(get_batch, test_args) or \
    not mdl.lab1.test_batch_func_next_step(get_batch, test_args):
    print("======\n[FAIL] could not pass tests")
 else:
-   print("======\n[PASS] passed all tests!")
+   print("======\n[PASS] passed all tests")
 
 x_batch, y_batch = get_batch(vectorized_songs, seq_length=5, batch_size=1)
 
@@ -132,7 +132,7 @@ def LSTM(rnn_units):
     recurrent_initializer='glorot_uniform',
     recurrent_activation='sigmoid',
     stateful=True,
-    use_cudnn=False # Disable cuDNN
+    use_cudnn=True 
   )
 
 def build_model(vocab_size, embedding_dim, rnn_units, batch_size):
